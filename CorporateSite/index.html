@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biagomba: Health & Wellness</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">BHW</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="sign-up">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Strengthening, Mobility, Flexibility, & <span>Health.</span></h1>
+            <p class="hero__description">Get employees feeling new</p>
+            <button class="main__btn"><a href="#services">Explore</a></button>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>Bring health into your office</h2>
+                <p>Click below to learn more about the benefits to your company</p>
+                <button class="main__btn"><a href="#">Learn More</a></button>
+            </div>
+            <div class="main__modal--bg">
+                <div class="modal">
+                    <h2 class="main__header">Company Benefits</h2>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <span class="modal-close">X</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <h2>1-on-1 Sessions</h2>
+                <p>Work on specific employees needs</p>
+                <div class="one__btn services__btn"><button class="one--btn">Learn More</button></div>
+            </div>
+            <div class="one__modal--bg bg">
+                <div class="modal">
+                    <h2 class="one__header">1-on-1 Sessions</h2>
+                    <p class="one__body">Work with a trained professional through a guided strengthening
+                        and mobility based workout to address common physical health problems associated
+                        with long hours of working in an office.</p>
+                    <span class="modal-close">X</span>
+                </div>
+            </div>
+            <div class="services__card">
+                <h2>Group Mobility Sessions</h2>
+                <p>Chorei style group mobility</p>
+                <div class="gm__btn services__btn"><button class="gm--btn">Learn More</button></div>
+            </div>
+            <div class="gm__modal--bg bg">
+                <div class="modal">
+                    <h2 class="gm__header">Group Mobility Sessions</h2>
+                    <p class="gm__body">Inspired by Japanese chorei. A guided group strengthening and mobility work led
+                        by an enthused professional to address common physical health
+                        problems associated with long hours of working in an office.</p>
+                    <span class="modal-close">X</span>
+                </div>
+            </div>
+            <div class="services__card">
+                <h2>Personal Training</h2>
+                <p>1 on 1 gym training</p>
+                <div class="pt__btn services__btn"><button class="pt--btn">Learn More</button></div>
+            </div>
+            <div class="pt__modal--bg bg">
+                <div class="modal">
+                    <h2 class="pt__header">Personal Training</h2>
+                    <p class="pt__body">Providing certified and degreed professionals to provide customized personal
+                        training within your office gym. Also provide connections to local Philadelphia gyms
+                        and their personal trainers for employees.
+                    </p>
+                    <span class="modal-close">X</span>
+                </div>
+            </div>
+            <div class="services__card">
+                <h2>Group Fitness</h2>
+                <p>Fitness training for group of employees</p>
+                <div class="gf__btn services__btn"><button class="gf--btn">Learn More</button></div>
+            </div>
+            <div class="gf__modal--bg bg">
+                <div class="modal">
+                    <h2 class="gf__header">Group Fitness</h2>
+                    <p class="gf__body">Providing certified and degreed professionals to administer customized group
+                        fitness workouts within your corporate office. Also provide connections to local
+                        Philadelphia group fitness studios for both sponsored events and regular fitness for employees.
+                    </p>
+                    <span onclick="closeModal()" class="modal-close">X</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="main" id="sign-up">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Join Our Partners</h1>
+                <h2>Discover Health</h2>
+                <p>See what makes us different</p>
+                <button class="main__btn--con main__btn">Contact Us</button>
+            </div>
+            <div class="contact__modal--bg bg">
+                <div class="m2">
+                    <div class="container">
+                        <form onsubmit="sendEmail(); reset(); return false">
+                            <h3>Get In Touch</h3>
+                            <span class="modal-close2">X</span>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="email" id="email" placeholder="Email ID" required>
+                            <input type="text" id="phone" placeholder="Phone No." required>
+                            <textarea id="message" rows="4" placeholder="How can our services help you?"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <!-- <a href="/">Destination</a> -->
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">BHW</a>
+                </div>
+                <p class="website__rights">Biagoma: Health & Wellness 2023. All rights reserved</p>
+                <div class="social__icon">
+                    <a href="/" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/546eeeec93.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "abiagomba83@gmail.com",
+                Password: "password",
+                To: 'ArnoldTestMail@gmail.com',
+                From: document.getElementById(`email`).value,
+                Subject: "New Contact Form",
+                Body: "Name: " + document.getElementById(`name`).value
+                    + `<br> Email: ` + document.getElementById(`email`).value
+                    + `<br> Phone No.: ` + document.getElementById(`phone`).value
+                    + `<br> Message: ` + document.getElementById(`message`).value
+            }).then(
+                message => alert('Message Sent Successfully')
+            );
+        }
+    </script>
+</body>
+
+</html>
