@@ -11,8 +11,7 @@ const oneModalBtn = document.querySelector('.one--btn'),
     ptModalBg = document.querySelector('.pt__modal--bg'),
     gfModalBg = document.querySelector('.gf__modal--bg'),
     contactBg = document.querySelector('.contact__modal--bg'),
-    modalClose = document.querySelector('.modal-close'),
-    bgModal = document.querySelector('.bg');
+    modalCloseEls = document.querySelectorAll(".modal-close")
 
 
 const mobileMenu = () => {
@@ -95,11 +94,14 @@ document.body.addEventListener('click', function (e) {
     removeModal.classList.remove('bg--active')
 })
 
-modalClose.addEventListener('click', function (e) {
-    console.log(e.target)
-    bgModal.classList.remove('bg--active')
-})
+// Add event listener for every element with "modal-close"
+modalCloseEls.forEach((el) => {
+  //Corresponding div element with "modal" class that is the direct parent of the x that was clicked
+  const modalEl = el.parentElement;
+  //Corresponding div element with "bg" class that is the direct grandparent of the x that was clicked
+  const bgModalEl = modalEl.parentElement;
+  el.addEventListener("click", function () {
+    bgModalEl.classList.remove("bg--active");
+  });
+});
 
-const closeModal = () => {
-    bgModal.classList.remove('bg--active')
-}
